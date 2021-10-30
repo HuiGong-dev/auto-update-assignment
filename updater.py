@@ -72,7 +72,6 @@ def buildTelegramBotRequestUrl(token, chat_id, parsedUpdates):
 def compare(page_fresh, page_storage):
     fresh_links = get_uebung_links(get_table(page_fresh))
     if os.path.isfile("./" + page_storage):
-        print("Storage file exists. Checking for update...")
         with open(page_storage, "r", newline='') as f:
             storage = f.read()
             storage_links = get_uebung_links(get_table(storage))
@@ -86,10 +85,8 @@ def compare(page_fresh, page_storage):
             print('You are up to date.')
     else:
         with open(page_storage, "w", newline='') as f:
-            print("Download page to local storage for the first time")
             f.write(page_fresh)
             f.close()
-            print("Call bot first time")
             callBot(combineUrlWithLinks(url, fresh_links), token, chat_id)
 
 def combineUrlWithLinks(url, link_list):
