@@ -40,13 +40,10 @@ def get_uebung_links(table):
 # Return added item list and deleted item list
 def getDifference(fresh_links, storage_links):
     added = []
-    # deleted = []
     for item in fresh_links:
           if item not in storage_links:
               added.append(url + item)
-    # for item in storage_links:
-    #     if item not in fresh_links:
-    #         deleted.append(url + item)
+
     return added
 
 # Prepare result text for telegram bot
