@@ -35,5 +35,14 @@ import urllib.parse as ul
 ## Usage
 
 ```Shell
-$ pyhon3 updater.py
+pyhon3 updater.py
+```
+## Scheduling
+Crontab is a job scheduler on Ubuntu. Since the assignment is always due on Friday, I set the scheduler to run at minute 15 past every hour from 14 through 18 on Friday.
+```Shell
+crontab -e
+```
+
+```Shell
+15 14-18 * * 5 /path/to/python3 /path/to/updater.py >> /path/to/cron.log 2>&1
 ```
