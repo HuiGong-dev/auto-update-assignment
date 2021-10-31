@@ -1,7 +1,7 @@
 # auto-update-assignment
 ## What?
 
-A small piece of code to scrape assignments of lecture [Programmierparadigmen](https://pp.ipd.kit.edu/lehre/WS202122/paradigmen/index.php?lang=de) and send the updates through Telegram Bot to me.
+A small piece of code to scrape assignments of lecture [Programmierparadigmen](https://pp.ipd.kit.edu/lehre/WS202122/paradigmen/index.php?lang=de) and send the updates through Telegram Bot. (Set variable `chat_id` to send message to your account/ others account/a channel).
 
 ## Why?
 
