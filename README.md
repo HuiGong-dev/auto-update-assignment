@@ -8,7 +8,7 @@ A small piece of code to scrape assignments of lecture [Programmierparadigmen](h
 The reasons for this piece of code are:
 
 - Instead of using official learning platform [Ilias](https://ilias.studium.kit.edu/), all the assignments of this lecture are updated on [this](https://pp.ipd.kit.edu/lehre/WS202122/paradigmen/index.php?lang=de) website.
-- I'm too lazy to refresh the page and check if there's new assignments there.
+- I'm too lazy to refresh the page and check if there's new assignment there.
 - It's fun xD
 
 
